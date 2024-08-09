@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">CloudConnectionNode</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">conn:adobe_conn</value>
+  <value name="node_pkg">AdobeTest</value>
+  <value name="is_public">false</value>
+  <value name="cloudNodeVersion">1</value>
+  <record name="cloudNodeProperties" javaclass="com.wm.util.Values">
+    <number name="connectionNodeVersion" type="Integer">1</number>
+    <value name="connectorID">com.softwareag.cloudstreams.adobe.experienceplatform_v1</value>
+    <value name="providerName">WmAdobeExperiencePlatformProvider</value>
+    <value name="providerConnectionType">sagcloud</value>
+    <record name="connectionGroupProperties" javaclass="com.wm.util.Values">
+      <value name="cn.providerUrl">https://platform.adobe.io</value>
+      <value name="cn.connectTimeout">300000</value>
+      <value name="cn.readTimeout">300000</value>
+      <value name="cn.socketStaleCheck">true</value>
+      <value name="cn.validateAfterInactivity">1000</value>
+      <value name="cn.retryCount">3</value>
+      <value name="cn.retryIfRequestSentOk">true</value>
+      <value name="cn.tcpNoDelay">false</value>
+      <value name="cn.socketLinger">-1</value>
+      <value name="cn.sockBuffSize">8192</value>
+      <value name="cn.reuseAddr">false</value>
+      <value name="cn.webproxyAlias"></value>
+      <value name="cn.truststoreAlias"></value>
+      <value name="cn.keystoreAlias"></value>
+      <value name="cn.clientKeyAlias"></value>
+      <value name="cn.hostnameVerifier">org.apache.http.conn.ssl.DefaultHostnameVerifier</value>
+      <value name="cn.keepAliveInterval">300000</value>
+      <value name="cn.idleTimeout">-1</value>
+      <value name="cn.enableCompression">false</value>
+      <value name="cn.enableSNI">true</value>
+      <value name="cn.sniServerName"></value>
+      <value name="pr.httpContentCharSet">ISO-8859-1</value>
+      <value name="pr.protocolVersion">HTTP/1.1</value>
+      <value name="pr.userAgent">Cloudstreams</value>
+      <value name="pr.useExpectCont">false</value>
+      <value name="pr.useChunking">false</value>
+      <value name="pr.followServerRedirects">true</value>
+      <value name="pr.allowCircularRedirects">true</value>
+      <value name="pr.serverRedirectMax">5</value>
+      <value name="oauth_v20.iss">EFE243245DB9D3DD0A495E80@AdobeOrg</value>
+      <value name="oauth_v20.sub">842420166054C3B00A495E0E@techacct.adobe.com</value>
+      <value name="oauth.accessToken">conn:adobe_conn.oauth.accessToken</value>
+      <value name="oauth_v20.instanceURL"></value>
+      <value name="oauth_v20.authorizationHeaderPrefix">Bearer</value>
+      <value name="oauth_v20.accessTokenRefreshCustomESBService">wmadobe.experienceplatform_v1.utils.jwtAccessToken:refreshJwtAccessToken</value>
+      <value name="jwt.authenticationServerUrl">https://ims-na1.adobelogin.com/ims/exchange/jwt</value>
+      <value name="jwt.header.alg">RS256</value>
+      <value name="jwt.claim.aud">https://ims-na1.adobelogin.com/c/303cb604959e4cf3b5a336923ae8979b</value>
+      <value name="jwt.omitPadding">true</value>
+      <value name="jwt.keystoreAlias">adobe_keystore</value>
+      <value name="jwt.keyAlias">1</value>
+      <value name="jwt.proxyAlias"></value>
+      <value name="jwt.claim.https://ims-na1.adobelogin.com/s/ent_dataservices_sdk">true</value>
+      <value name="jwt.claim.exp">60</value>
+      <value name="jwt.cx.clientId">303cb604959e4cf3b5a336923ae8979b</value>
+      <value name="jwt.cx.clientSecret">conn:adobe_conn.jwt.cx.clientSecret</value>
+      <value name="cx.sanbox_name">softwareagsandboxae</value>
+      <value name="cx.streamingUrl">https://dcs.adobedc.net</value>
+    </record>
+    <array name="passmanHandles" type="value" depth="1">
+      <value>conn:adobe_conn.oauth.accessToken</value>
+      <value>conn:adobe_conn.jwt.cx.clientSecret</value>
+    </array>
+    <record name="connectionManagerProperties" javaclass="com.wm.util.Values">
+      <value name="poolable">true</value>
+      <value name="minimumPoolSize">1</value>
+      <value name="maximumPoolSize">10</value>
+      <value name="poolIncrementSize">1</value>
+      <value name="blockTimeout">1000</value>
+      <value name="expireTimeout">1000</value>
+      <value name="startupRetryCount">0</value>
+      <value name="startupBackoffSecs">10</value>
+      <value name="timeoutType">auto</value>
+      <value name="sessionExpiry">1439</value>
+    </record>
+    <array name="formattableFields" type="value" depth="1">
+    </array>
+    <value name="connectionEnabled">true</value>
+  </record>
+</Values>
